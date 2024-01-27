@@ -1,0 +1,17 @@
+.highlight_tabs__container {
+  gap: 0.7rem;
+}
+
+.highlight_tabs__tab {
+  cursor: pointer;
+  border: var(--border-style);
+  border-radius: var(--border-radius);
+  color: var(--title-color);
+  text-align: center;
+  display: inline-block;
+  font-weight: var(--fontweight_bolder);
+  padding: 10px 20px;
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-right: 0.4rem;
+}

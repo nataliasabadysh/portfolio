@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-primary: #0a74ee;
+
+  --color-bg_content: #ffffff;
+
+  --main-bg-color: #f3f4f6;
+  --title-color: #262626;
+  --text-color: #525252;
+
+  --color-bg: #f3f4f6;
+
+  --gradient: linear-gradient(
+    93.33deg,
+    #d77be6 9.26%,
+    #be63e6 42.32%,
+    #6c38cc 104.58%
+  );
+
+  --border-radius: 2.34rem;
+  --border-style: 1px solid #ffda0b;
+
+  --layout-mobile: 480px;
+  --layout-tablet: 768px;
+  --layout-width: 1440px;
+
+  --fontsize_smaller: 1rem;
+  --fontsize_small: 1.2rem;
+  --fontsize_medium: 1.5rem;
+  --fontsize_large: 2rem;
+  --fontsize_subtitle: 1.75rem;
+
+  --fontweight_light: 300;
+  --fontweight_medium: 500;
+  --fontweight_bold: 600;
+  --fontweight_bolder: 700;
+
+  --fontsize_title: 3.5rem;
+  --font-family: "Arial", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background: var(--color-bg);
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: var(--layout-mobile);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: var(--layout-tablet);
+  }
+}
+
+@media screen and (min-width: 1140px) {
+  .container {
+    width: var(--layout-width);
+  }
+}
+
+h2 {
+  font-size: var(--fontsize_title);
+}

@@ -1,0 +1,81 @@
+.header {
+  padding-top: 21px;
+  padding-bottom: 21px;
+}
+
+.nav {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+}
+
+.navItem {
+  margin-right: 1.5rem;
+}
+
+.navLink {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-decoration: none;
+  color: #010101;
+}
+
+.cvButton {
+  border-radius: 12px;
+  background-color: #e7ebee;
+  border: none;
+  color: #010101;
+  text-align: center;
+  padding: 10px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+}
+
+.cvButton:after {
+  content: "->";
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  right: -20px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.cvButton:hover {
+  padding-right: 15px;
+  padding-left: 8px;
+}
+
+.cvButton:hover:after {
+  opacity: 1;
+  right: 10px;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navItem {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .cvButton {
+    width: auto;
+  }
+}

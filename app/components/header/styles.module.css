@@ -28,6 +28,8 @@
   line-height: 1.2;
   text-decoration: none;
   color: #010101;
+  padding-right: 1.5rem;
+  font-weight: 500;
 }
 
 .cvButton {
@@ -42,6 +44,7 @@
   cursor: pointer;
   box-shadow: 0 5px 10px -8px rgba(0, 0, 0, 0.3);
   display: inline-block;
+  position: relative;
 }
 
 .cvButton:after {
@@ -49,25 +52,27 @@
   position: absolute;
   opacity: 0;
   top: 11px;
-  right: -20px;
+  right: -10px;
   transition: 0.5s;
   text-align: center;
 }
 
 .cvButton:hover {
-  padding-right: 15px;
+  padding-right: 10px;
   padding-left: 8px;
 }
 
 .cvButton:hover:after {
   opacity: 1;
-  right: 10px;
+  right: 5px;
 }
 
 @media (max-width: 768px) {
   .nav {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .navItem {

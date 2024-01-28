@@ -1,10 +1,10 @@
 import styles from "./styles.module.css";
 
 const experience = [
-  { value: "7+", title: "Years in Web Development" },
-  { value: "16", title: "Web Projects Completed" },
-  { value: "400+", title: "Hours Mentoring at IT School" },
-  { value: "1 🎉", title: "Personal SaaS Project" },
+  { value: "7+", title: "years in web development" },
+  { value: "16", title: "web projects completed" },
+  { value: "400+", title: "hours mentoring at IT school" },
+  { value: "1 🎉", title: "personal SaaS project" },
 ];
 
 export const About = () => {

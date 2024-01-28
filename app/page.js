@@ -4,15 +4,15 @@ import { Footer } from "./components/footer";
 import { Header } from "./components/header";
 import { About } from "./components/about";
 import { HighlightTabsNav } from "./components/tabs/HighlightTabsNav";
+import { Achievement } from "./components/achievement";
 
 export default function Home() {
   return (
     <>
-      <Header />
-
       <main>
         <Hero />
         <About />
+        <Achievement />
       </main>
 
       <footer>

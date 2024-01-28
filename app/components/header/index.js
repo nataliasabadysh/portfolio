@@ -10,17 +10,17 @@ export const Header = () => {
         <ul className={styles.navList}>
           <li className={styles.navItem}>
             <Link href="/">
-              <p className={styles.navLink}>Home</p>
+              <p className={styles.navLink}>home</p>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href="/work">
-              <p className={styles.navLink}>Work</p>
+              <p className={styles.navLink}>work</p>
             </Link>
           </li>
           <li className={styles.navItem}>
             <Link href="/blog">
-              <p className={styles.navLink}>Blog</p>
+              <p className={styles.navLink}>blog</p>
             </Link>
           </li>
         </ul>
@@ -33,7 +33,7 @@ export const Header = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              CV
+              cv
             </a>
           </li>
         </ul>

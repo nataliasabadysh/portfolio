@@ -48,6 +48,15 @@ const list = [
     category: "books",
     resources: [],
   },
+  {
+    category: "news blog",
+    resources: [
+      {
+        url: "https://www.lifewire.com/software-and-apps-4781541",
+        name: "TECH FOR HUMANS",
+      },
+    ],
+  },
 ];
 
 export const HighlightTabsNav = () => {
@@ -60,7 +69,7 @@ export const HighlightTabsNav = () => {
       </p>
       <ul className={styles.highlight_tabs__container}>
         {list.map((categoryItem, index) => (
-          <div key={index}>
+          <li key={index}>
             <button className={styles.highlight_tabs__tab}>
               {categoryItem.category}
             </button>
@@ -73,7 +82,7 @@ export const HighlightTabsNav = () => {
                             </li>
                         )) : <li>No resources available in this category</li>}
                     </ul> */}
-          </div>
+          </li>
         ))}
       </ul>
     </section>

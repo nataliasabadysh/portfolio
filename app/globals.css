@@ -11,7 +11,8 @@
   --title-color: #262626;
   --text-color: #525252;
 
-  --color-bg: #f3f4f6;
+  --color-bg: #ececec;
+  --color-accent: #ffda0b;
 
   --gradient: linear-gradient(
     93.33deg,
@@ -71,6 +72,19 @@ a {
   margin-right: auto;
 }
 
+h2 {
+  font-size: var(--fontsize_title);
+  letter-spacing: -3px;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 42px;
+  }
+  h3 {
+    font-size: 1.4rem;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: var(--layout-mobile);
@@ -87,8 +101,4 @@ a {
   .container {
     width: var(--layout-width);
   }
-}
-
-h2 {
-  font-size: var(--fontsize_title);
 }

@@ -4,8 +4,8 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  margin-left: -10px; /* Simplified calculation */
-  margin-top: -10px; /* Simplified calculation */
+  margin-left: -10px;
+  margin-top: -10px;
 }
 
 .list__item {

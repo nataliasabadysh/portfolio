@@ -14,6 +14,9 @@
   display: flex;
   gap: 0.5rem;
 }
+.link > a:hover {
+  font-weight: 600;
+}
 .container > .link {
   flex-basis: calc(100% / 4 - 10px);
   margin-left: 10px;

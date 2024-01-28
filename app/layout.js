@@ -1,4 +1,4 @@
-import { Inter, Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import { Header } from "./components/header";
 import "./globals.css";
 

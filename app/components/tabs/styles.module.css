@@ -1,9 +1,14 @@
-.highlight_tabs__container {
+.wrapper {
+  background-color: #282c35;
   gap: 0.7rem;
+  padding: 3rem 1.5rem;
+  border-radius: 16px;
+  color: white;
 }
 
 .highlight_tabs__tab {
   cursor: pointer;
+  background-color: white;
   border: var(--border-style);
   border-radius: var(--border-radius);
   color: var(--title-color);
@@ -14,4 +19,75 @@
   font-size: 12px;
   text-transform: uppercase;
   margin-right: 0.4rem;
+  margin: 2px;
+}
+.highlight_tabs__tab:hover {
+  background-color: var(--color-accent);
+}
+.highlight_tab_active {
+  background-color: var(--color-accent);
+}
+
+.item {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  border-radius: 9999px;
+
+  transition-property: all;
+  transition-duration: 0.15s;
+}
+
+.item .svg {
+  gap: 0.25rem;
+}
+.highlight_tabs__container {
+  position: relative;
+  padding-top: 20px;
+}
+
+.resourceList {
+  position: absolute;
+  right: 40%;
+  top: 10%;
+}
+.resourceList > li {
+  border: 1px solid #333;
+  border-radius: 10%;
+  padding: 5px 10px;
+}
+.resourceList > li:hover {
+  border: 1px solid #000;
+}
+
+.resourceList > span {
+  padding-bottom: 12px;
+  display: block;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.resource {
+  gap: 10px;
+}
+.title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .highlight_tabs__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .resourceList {
+    position: inherit;
+  }
 }

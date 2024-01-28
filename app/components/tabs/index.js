@@ -1,4 +1,9 @@
+"use client";
+
+import { useState } from "react";
 import styles from "./styles.module.css";
+import { ResourceList } from "./categoryItem";
+import { MdOutlineArrowOutward } from "react-icons/md";
 
 const list = [
   {
@@ -60,30 +65,42 @@ const list = [
 ];
 
 export const HighlightTabsNav = () => {
+  const [expandedCategory, setExpandedCategory] = useState(2);
+
+  const toggleCategory = (index) => {
+    if (expandedCategory === index) {
+      setExpandedCategory(null);
+    } else {
+      setExpandedCategory(index);
+    }
+  };
+
   return (
-    <section>
+    <section className={styles.wrapper}>
       <h2>Channels for every developer: </h2>
       <p>
         Where I learn and gettting inspiration. and where I would recommended
         for every developer.
       </p>
       <ul className={styles.highlight_tabs__container}>
-        {list.map((categoryItem, index) => (
-          <li key={index}>
-            <button className={styles.highlight_tabs__tab}>
-              {categoryItem.category}
-            </button>
+        {list.map((categoryItem, index) => {
+          const activeTab = expandedCategory === index;
 
-            {/* TODO */}
-            {/* <ul className={styles.resourceList}>
-                        {categoryItem.resources.length > 0 ? categoryItem.resources.map((resource, resourceIndex) => (
-                            <li key={resourceIndex}>
-                                <a href={resource.url} target="_blank" rel="noopener noreferrer">{resource.name || 'Unnamed Resource'}</a>
-                            </li>
-                        )) : <li>No resources available in this category</li>}
-                    </ul> */}
-          </li>
-        ))}
+          const stylingActiveTabe = activeTab
+            ? styles.highlight_tabs__tab + " " + styles.highlight_tab_active
+            : styles.highlight_tabs__tab;
+          return (
+            <li key={index}>
+              <button
+                className={stylingActiveTabe}
+                onClick={() => toggleCategory(index)}
+              >
+                {categoryItem.category}
+              </button>
+              {activeTab && <ResourceList resources={categoryItem} />}
+            </li>
+          );
+        })}
       </ul>
     </section>
   );

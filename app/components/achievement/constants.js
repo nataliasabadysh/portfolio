@@ -6,7 +6,7 @@ export const list = [
         title: "Cleint Site",
         message:
           "Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the icons that your project is using.",
-          link:'/work'
+        link: "/work",
       },
     ],
   },
@@ -16,7 +16,7 @@ export const list = [
       {
         title: "Cleint Site",
         message: "iwhich utour project is using.is fast, ",
-        link:'/work'
+        link: "/work",
       },
     ],
   },
@@ -26,7 +26,7 @@ export const list = [
       {
         title: "Cleint Site",
         message: "iwhich utour project is using.is fast, ",
-        link:'/work'
+        link: "/work",
       },
     ],
   },

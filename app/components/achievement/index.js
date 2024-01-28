@@ -7,11 +7,13 @@ import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Link from "next/link";
 
 const Item = ({ item, isExpanded }) => {
-
   return isExpanded ? (
     <li className={style.achievement__descr}>
       {item.message}
-      <Link href={item.link} className={style.read_more}>{' '}read more</Link>
+      <Link href={item.link} className={style.read_more}>
+        {" "}
+        read more
+      </Link>
     </li>
   ) : null;
 };

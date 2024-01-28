@@ -14,7 +14,7 @@
   color: var(--title-color);
   text-align: center;
   display: inline-block;
-  font-weight: 800;
+  font-weight: 700;
   padding: 10px 20px;
   font-size: 12px;
   text-transform: uppercase;
@@ -51,6 +51,8 @@
   position: absolute;
   right: 40%;
   top: 10%;
+    /* TODO refacrt */
+ /* height: 48px; */
 }
 .resourceList > li {
   border: 1px solid #333;

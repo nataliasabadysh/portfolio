@@ -1,25 +1,54 @@
+import { SocialMedia } from "../socialmedia";
 import styles from "./styles.module.css";
 
-export const Footer = () => {
+const contacts = [
+  {
+    type: "Email",
+    value: "nataliasabadysh@gmail.com",
+    href: "mailto:nataliasabadysh@gmail.com",
+  },
+  {
+    type: "Phone",
+    value: "+16048410810",
+    href: `tel:+16048410810`,
+  },
+  {
+    type: "Address",
+    value: "Vancouver, BC V6G 1W9",
+    href: ``,
+  },
+];
+
+export function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>
-        Made with{" "}
-        <span role="img" aria-label="love">
-          💙
-        </span>{" "}
-        in Canada using Next.js, Vercel, and CSS Modules.
-      </p>
-      <p>
-        <a
-          href="/"
-          className={styles.sourceLink}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          View Source
-        </a>
-      </p>
+      <section className={styles.footer__section}>
+        <ul className={styles.footer__linkContainer}>
+          {contacts.map((contact) => (
+            <li className={styles.footer__item} key={contact.type}>
+              {contact.href ? (
+                <a
+                  href={contact.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={contact.type}
+                >
+                  {contact.value}
+                </a>
+              ) : (
+                <span>{contact.value}</span>
+              )}
+            </li>
+          ))}
+        </ul>
+        <SocialMedia />
+      </section>
+
+      <div className={styles.footer__bottomContainer}>
+        <span className={styles.footer__copyright}>
+          designed & developed with ♥️ by Natalia Sabadysh
+        </span>
+      </div>
     </footer>
   );
-};
+}

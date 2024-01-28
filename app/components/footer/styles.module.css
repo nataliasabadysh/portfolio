@@ -1,3 +1,39 @@
 .footer {
-  width: 100%;
+  padding: 20px;
+}
+
+.footer__section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.footer__linkContainer {
+  list-style: none;
+  padding: 0;
+}
+
+.footer__item {
+  margin-bottom: 10px;
+}
+
+.footer__bottomContainer {
+  border-top: 1px solid #dee2e6;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer__copyright {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .footer__section {
+    flex-direction: column;
+  }
+
+  .footer__linkContainer {
+    margin-bottom: 20px;
+  }
 }

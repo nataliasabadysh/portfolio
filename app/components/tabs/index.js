@@ -28,6 +28,7 @@ const list = [
         name: "Viewport Size for Devices",
       },
       { url: "https://www.mydevice.io/", name: "Screen metrics" },
+      { url: "https://caniuse.com/", name: "Can I Use ?" },
     ],
   },
   {

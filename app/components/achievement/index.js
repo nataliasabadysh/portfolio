@@ -57,7 +57,7 @@ export const Achievement = () => {
   return (
     <section className={style.achievement}>
       <div className={style.achievement__header}>
-        <h2>Where I'm good at:</h2>
+        <h2>Where I&apos;m good at</h2>
         <ul>{tagsJsx}</ul>
       </div>
 

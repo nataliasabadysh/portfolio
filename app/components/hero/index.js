@@ -20,10 +20,10 @@ export const Hero = () => {
 
       <div className={styles.hero_container + " " + styles.right}>
         <section>
-          <h1 className={styles.hero_title}> Hi! I'm Natalia. </h1>
+          <h1 className={styles.hero_title}> Hi! I&apos;m Natalia. </h1>
           <p className={styles.hero_subtitle}>
             {" "}
-            I'm a software developer based in Vancouver.{" "}
+            I&apos;m a software developer based in Vancouver.{" "}
           </p>
 
           <div className={styles.img}>

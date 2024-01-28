@@ -6,7 +6,7 @@ export default function NotFound() {
       <h1>Page Not Found</h1>
       <div className="markdown mt-10">
         <p>
-          Sorry, the page you are looking for doesn't exist or it may have been
+          Sorry, the page you are looking for doesn&apos;t exist or it may have been
           moved.
         </p>
         <p>

@@ -3,17 +3,8 @@
 import { useState } from "react";
 import styles from "./styles.module.css";
 import { ResourceList } from "./categoryItem";
-import { MdOutlineArrowOutward } from "react-icons/md";
 
 const list = [
-  {
-    category: "youtube",
-    resources: [],
-  },
-  {
-    category: "community",
-    resources: [],
-  },
   {
     category: "web development",
     resources: [
@@ -22,13 +13,55 @@ const list = [
         url: "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
         name: "HTML spec Standard",
       },
-      { url: "https://validator.w3.org/nu/", name: "Validator" },
+      { url: "https://validator.w3.org/nu/", name: "Validator HTML" },
       { url: "https://htmlreference.io/element/a/", name: "htmlreference" },
+      { url: "https://css-tricks.com/", name: "css-tricks, CSS " },
+      { url: "https://cssreference.io/", name: "cssreference CSS" },
+      {
+        url: "https://codepip.com/",
+        name: "Codepip,web development games.CSS ",
+      },
+      { url: "https://htmlcheatsheet.com/css/", name: "CSS CheatSheet" },
+      { url: "https://quickref.me/css3.html", name: "CSS 3 cheatsheet" },
+      {
+        url: "https://yesviz.com/viewport/",
+        name: "Viewport Size for Devices",
+      },
+      { url: "https://www.mydevice.io/", name: "Screen metrics" },
     ],
   },
   {
     category: "javascript",
-    resources: [],
+    resources: [
+      {
+        name: "find the cost of adding a npm package to your bundle",
+        url: "https://bundlephobia.com/",
+      },
+      {
+        name: "Ecma TC39",
+        url: "https://github.com/tc39/proposals",
+      },
+      {
+        name: "Ecma TC53, standardization",
+        url: "https://github.com/tc39/proposals",
+      },
+      {
+        url: "https://developer.mozilla.org/en-US/",
+        name: "mozilla",
+      },
+      {
+        url: "https://www.w3schools.com/js/js_arrays.asp",
+        name: "w3schools",
+      },
+      {
+        name: "Data Structures: Objects and Arrays(book)",
+        url: "https://eloquentjavascript.net/04_data.html",
+      },
+      {
+        name: "Exploring ES6 (book)",
+        url: "https://exploringjs.com/es6/ch_arrays.html",
+      },
+    ],
   },
   {
     category: "python",
@@ -40,7 +73,33 @@ const list = [
   },
   {
     category: "typescript",
-    resources: [],
+    resources: [
+      {
+        name: "The TypeScript Handbook",
+        url: "https://www.typescriptlang.org/docs/handbook/intro.html",
+      },
+      {
+        name: "React & Redux in TypeScript - Complete Guide",
+        url: "https://github.com/piotrwitek/react-redux-typescript-guide",
+      },
+      {
+        name: "React TypeScript Cheatsheet",
+        url: "https://react-typescript-cheatsheet.netlify.app/docs/basic/setup/",
+      },
+    ],
+  },
+  {
+    category: "react",
+    resources: [
+      {
+        url: "https://vasanthk.gitbooks.io/react-bits/content/",
+        name: "React Bits. React Patterns, techniques, tips and tricks.",
+      },
+      {
+        url: "https://github.com/Asabeneh/30-Days-Of-React/blob/master/21_Introducing_Hooks/21_introducing_hooks.md",
+        name: "30 Days of React challenge.",
+      },
+    ],
   },
   {
     category: "image optimization",
@@ -51,7 +110,16 @@ const list = [
   },
   {
     category: "books",
-    resources: [],
+    resources: [
+      {
+        url: "https://www.thriftbooks.com/w/code-complete_steve-mcconnell/248753/item/4046984/?utm_source=google&utm_medium=cpc&utm_campaign=pmax_canada_high&utm_adgroup=&utm_term=&utm_content=&gad_source=1&gclid=CjwKCAiA8NKtBhBtEiwAq5aX2JPHP2QlRYlKNvYdjttpHYk7IhjYTWcj7H4zvlz9IVpBhIu9gSdu9RoCiKoQAvD_BwE#idiq=4046984&edition=2487180",
+        name: "Code Complete, Steve McConnell",
+      },
+      {
+        url: "https://www.amazon.ca/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=asc_df_0132350882/?tag=googleshopc0c-20&linkCode=df0&hvadid=292982483438&hvpos=&hvnetw=g&hvrand=3938401040052068565&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001551&hvtargid=pla-435472505264&psc=1&mcid=ffff5ebc9f023d4fa66d447c82b0bbb6",
+        name: "Clean Code, Robert Martin",
+      },
+    ],
   },
   {
     category: "news blog",
@@ -62,10 +130,27 @@ const list = [
       },
     ],
   },
+  {
+    category: "community",
+    resources: [
+      {
+        url: "https://portal.gitnation.org/",
+        name: "GitNation Foundation, enthusiasts, engineers community",
+      },
+      {
+        url: "https://codingchallenges.substack.com/",
+        name: "Coding Challenges",
+      },
+    ],
+  },
+  {
+    category: "youtube",
+    resources: [],
+  },
 ];
 
 export const HighlightTabsNav = () => {
-  const [expandedCategory, setExpandedCategory] = useState(2);
+  const [expandedCategory, setExpandedCategory] = useState(0);
 
   const toggleCategory = (index) => {
     if (expandedCategory === index) {

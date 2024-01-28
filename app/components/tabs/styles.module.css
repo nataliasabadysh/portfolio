@@ -14,7 +14,7 @@
   color: var(--title-color);
   text-align: center;
   display: inline-block;
-  font-weight: var(--fontweight_bolder);
+  font-weight: 800;
   padding: 10px 20px;
   font-size: 12px;
   text-transform: uppercase;

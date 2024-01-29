@@ -23,6 +23,11 @@ export const Header = () => {
               <p className={styles.navLink}>blog</p>
             </Link>
           </li>
+          <li className={styles.navItem}>
+            <Link href="/about">
+              <p className={styles.navLink}>about</p>
+            </Link>
+          </li>
         </ul>
 
         <ul className={styles.navList}>

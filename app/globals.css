@@ -26,7 +26,7 @@
 
   --layout-mobile: 480px;
   --layout-tablet: 768px;
-  --layout-width: 1440px;
+  --layout-width: 1280px;
 
   --fontsize_smaller: 1rem;
   --fontsize_small: 1.2rem;
@@ -101,4 +101,9 @@ h2 {
   .container {
     width: var(--layout-width);
   }
+}
+
+img {
+  border-radius: 8px;
+  width: 100%;
 }

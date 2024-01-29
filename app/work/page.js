@@ -12,7 +12,7 @@ const list = [
   },
 ];
 
-const Work = () => {
+export default function Work() {
   return (
     <ul>
       {list.map((item, index) => (
@@ -44,6 +44,4 @@ const Work = () => {
       ))}
     </ul>
   );
-};
-
-export default Work;
+}

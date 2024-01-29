@@ -51,8 +51,8 @@
   position: absolute;
   right: 40%;
   top: 10%;
-    /* TODO refacrt */
- /* height: 48px; */
+  /* TODO refacrt */
+  /* height: 48px; */
 }
 .resourceList > li {
   border: 1px solid #333;

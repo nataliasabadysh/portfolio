@@ -1,6 +1,7 @@
 import { Inter } from "next/font/google";
 import { Header } from "./components/header";
 import "./globals.css";
+import { Footer } from "./components/footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -8,9 +9,11 @@ const inter = Inter({
   weight: ["400", "500", "600", "700", "900"],
   style: ["normal"],
 });
+
 export const metadata = {
   title: "Natalia Sabadysh, Software Developer ",
-  description: "My Portfolio ",
+  description:
+    "I am a Software Developer specialising in complex enterprise web applications, with 6 years of professional experience in frontend technologies.",
 };
 
 export default function RootLayout({ children }) {
@@ -19,6 +22,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className + " container"}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

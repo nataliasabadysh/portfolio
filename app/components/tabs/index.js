@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import styles from "./styles.module.css";
 import { ResourceList } from "./categoryItem";
+import styles from "./styles.module.css";
 
 const list = [
   {
@@ -70,7 +70,12 @@ const list = [
   },
   {
     category: "sql",
-    resources: [],
+    resources: [
+      {
+        url: "https://www.c-sharpcorner.com/article/structured-query-language-sql/",
+        name: "Structured Query Language",
+      },
+    ],
   },
   {
     category: "typescript",
@@ -103,10 +108,21 @@ const list = [
     ],
   },
   {
-    category: "image optimization",
+    category: "image",
     resources: [
-      { url: "https://squoosh.app/", name: "Squoosh" },
-      { url: "https://jakearchibald.github.io/svgomg/", name: "SVGOMG" },
+      { url: "https://squoosh.app/", name: "Squoosh (optimization)" },
+      {
+        url: "https://jakearchibald.github.io/svgomg/",
+        name: "SVGOMG (optimization)",
+      },
+      {
+        url: "https://unsplash.com/s/photos/team",
+        name: "unsplash (photo storage)",
+      },
+      {
+        url: "https://tinypng.com/",
+        name: "Tiny png (Compression)",
+      },
     ],
   },
   {
@@ -119,6 +135,10 @@ const list = [
       {
         url: "https://www.amazon.ca/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350882/ref=asc_df_0132350882/?tag=googleshopc0c-20&linkCode=df0&hvadid=292982483438&hvpos=&hvnetw=g&hvrand=3938401040052068565&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9001551&hvtargid=pla-435472505264&psc=1&mcid=ffff5ebc9f023d4fa66d447c82b0bbb6",
         name: "Clean Code, Robert Martin",
+      },
+      {
+        url: "https://www.amazon.ca/Culture-Map-Breaking-Invisible-Boundaries/dp/1610392507",
+        name: "The Culture Map",
       },
     ],
   },
@@ -163,7 +183,7 @@ export const HighlightTabsNav = () => {
 
   return (
     <section className={styles.wrapper}>
-      <h2>Channels for every developer: </h2>
+      <h2>My Top Resources for Web Dev: </h2>
       <p>
         Where I learn and gettting inspiration. and where I would recommended
         for every developer.

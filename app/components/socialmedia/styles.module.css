@@ -13,12 +13,13 @@
   align-items: center;
   display: flex;
   gap: 0.5rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
 }
 .link > a:hover {
-  font-weight: 600;
+  border-bottom: 1px solid black;
 }
 .container > .link {
-  flex-basis: calc(100% / 4 - 10px);
+  padding-left: 20px;
   margin-left: 10px;
   margin-top: 10px;
 }

@@ -102,8 +102,3 @@ h2 {
     width: var(--layout-width);
   }
 }
-
-img {
-  border-radius: 8px;
-  width: 100%;
-}

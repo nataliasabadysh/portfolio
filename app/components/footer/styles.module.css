@@ -1,5 +1,9 @@
 .footer {
   padding: 20px;
+  background-color: var(--color-accent);
+  border-top-right-radius: 32px;
+  border-top-left-radius: 32px;
+  margin-top: 5px;
 }
 
 .footer__section {
@@ -18,13 +22,12 @@
 }
 
 .footer__bottomContainer {
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #f0f1f2;
   padding-top: 20px;
   margin-top: 20px;
 }
 
 .footer__copyright {
-  color: #6c757d;
   font-size: 0.9em;
 }
 

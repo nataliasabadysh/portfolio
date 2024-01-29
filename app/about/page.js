@@ -49,12 +49,9 @@ export default function Blog() {
         </p>
         <div style={{ paddingBottom: 20 }} />
         <p>
-          {" "}
           I am originally from Ukraine, living in Vancouver, BC, Canada. I legal
           authorized to work in Canada (no visa sponsorship required). 🇨🇦
         </p>
-        <div style={{ paddingBottom: 20 }} />
-        <SocialMedia />
       </Section>
 
       <Section
@@ -127,7 +124,7 @@ export default function Blog() {
       <Section title="What I Do After Work">
         <p className={styles.paragraph}>In my free time, you can find me: </p>
         <b>
-          Diving, dnowboarding, painting, making video, volunteering or cycling
+          Diving, snowboarding, painting, making video, volunteering or cycling
           around Stanley park.{" "}
         </b>
         I am proactive both at home and at work. I am a lifelong learner.

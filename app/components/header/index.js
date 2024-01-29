@@ -14,11 +14,6 @@ export const Header = () => {
             </Link>
           </li>
           <li className={styles.navItem}>
-            <Link href="/work">
-              <p className={styles.navLink}>work</p>
-            </Link>
-          </li>
-          <li className={styles.navItem}>
             <Link href="/blog">
               <p className={styles.navLink}>blog</p>
             </Link>

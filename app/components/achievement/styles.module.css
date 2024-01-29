@@ -63,3 +63,9 @@
   color: rgb(7, 130, 206);
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .achievement {
+    margin: 3rem 0;
+  }
+}

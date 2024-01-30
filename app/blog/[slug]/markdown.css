@@ -1,0 +1,25 @@
+.markdown {
+  line-height: 28px;
+}
+
+.markdown p {
+}
+
+.markdown a {
+}
+
+.markdown h1 {
+}
+
+.markdown h2 {
+}
+
+.markdown :not(pre) > code {
+  border-radius: 10px;
+  padding: 0.15em 0.2em 0.05em;
+  white-space: normal;
+}
+
+.markdown pre code {
+  width: auto;
+}

@@ -3,7 +3,11 @@ import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 
 import { MDXRemote } from "next-mdx-remote/rsc";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { BlogList } from "../components/blog";
+import styles from "./styles.module.css";
+
 // import remarkSmartpants from "remark-smartypants";
 // import rehypePrettyCode from "rehype-pretty-code";
 
@@ -13,12 +17,12 @@ import { useRouter } from "next/navigation";
 // };
 
 export async function getPosts() {
-  const entries = await readdir("./public/", { withFileTypes: true });
+  const entries = await readdir("./public/blog/", { withFileTypes: true });
   const dirs = entries
     .filter((entry) => entry.isDirectory())
     .map((entry) => entry.name);
   const fileContents = await Promise.all(
-    dirs.map((dir) => readFile("./public/" + dir + "/index.md", "utf8")),
+    dirs.map((dir) => readFile("./public/blog/" + dir + "/index.md", "utf8")),
   );
   const posts = dirs.map((slug, i) => {
     const fileContent = fileContents[i];
@@ -31,25 +35,24 @@ export async function getPosts() {
   return posts;
 }
 
-export default async function Blog({ params }) {
+export default async function Blog() {
   const posts = await getPosts();
 
-  console.log("1", params);
-
-  console.log("2", posts);
+  console.log(posts);
 
   return (
-    <section>
-      <h1>Coming soon :)</h1>
+    <section className={styles.container}>
+      <div className={styles.header}>
+        <h1 className={styles.title}> Blog </h1>
+        <span className={styles.label}>{posts.length || 0}</span>
+      </div>
       <p>
         On my blog, I'll be sharing my experiences, learnings, and thoughts on
         web development.
-        <ul>
-          {posts.map((item, idx) => (
-            <li key={idx}>{item.slug}</li>
-          ))}
-        </ul>
       </p>
+      <div>
+        <BlogList content={posts} />
+      </div>
     </section>
   );
 }

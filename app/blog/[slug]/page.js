@@ -1,7 +1,18 @@
 import { readdir, readFile } from "fs/promises";
-import matter from "gray-matter";
 
-export async function generateStaticParams({ params }) {
+import matter from "gray-matter";
+import { MDXRemote } from "next-mdx-remote/rsc";
+
+import remarkSmartpants from "remark-smartypants";
+import rehypePrettyCode from "rehype-pretty-code";
+
+import overnight from "overnight/themes/Overnight-Slumber.json";
+
+import "./markdown.css";
+
+overnight.colors["editor.background"] = "var(--code-bg)";
+
+export async function generateStaticParams() {
   const entries = await readdir("./public", { withFileTypes: true });
 
   const dirs = entries
@@ -11,7 +22,10 @@ export async function generateStaticParams({ params }) {
 }
 
 export async function generateMetadata({ params }) {
-  const file = await readFile("./public/" + params.slug + "/index.md", "utf8");
+  const file = await readFile(
+    "./public/blog/" + params.slug + "/index.md",
+    "utf8",
+  );
   let { data } = matter(file);
   return {
     title: data.title + " — Natalia Sabadysh | Software Developer",
@@ -20,10 +34,12 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  const filename = "./public/" + params.slug + "/index.md";
+  const filename = "./public/blog/" + params.slug + "/index.md";
   const file = await readFile(filename, "utf8");
 
   const { content, data } = matter(file);
+
+  console.log(data);
 
   return (
     <div>
@@ -34,6 +50,26 @@ export default async function Page({ params }) {
       })}
 
       <h1>{data.title}</h1>
+
+      <div className="markdown">
+        <MDXRemote
+          source={content}
+          options={{
+            mdxOptions: {
+              useDynamicImport: true,
+              remarkPlugins: [remarkSmartpants],
+              rehypePlugins: [
+                [
+                  rehypePrettyCode,
+                  {
+                    theme: overnight,
+                  },
+                ],
+              ],
+            },
+          }}
+        />
+      </div>
     </div>
   );
 }

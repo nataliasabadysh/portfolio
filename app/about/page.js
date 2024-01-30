@@ -140,7 +140,7 @@ export default function Blog() {
           I am currently learning SQL, Data Structures, and Algorithms with
           Python.
         </p>
-        <p> I want to develop my skills as a Full Stack Engineer.</p>
+        <p> I want to develop my skills as a Data Engineer.</p>
       </Section>
 
       <Section title="">

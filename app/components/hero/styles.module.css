@@ -37,7 +37,41 @@
   border-radius: var(--border-radius);
 }
 
+.list {
+  padding-top: 20px;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -10px;
+  margin-top: -10px;
+}
+
+.list__item {
+  flex-basis: calc(100% / 3 - 10px);
+  margin-left: 10px;
+  margin-top: 10px;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 32px;
+  font-size: 14px;
+}
+
+.list__item > span {
+  font-size: 3.5rem;
+  font-weight: 700; /* Corrected from 'font-family' to 'font-weight' */
+}
+
 @media (max-width: 768px) {
+  .list__item {
+    flex-basis: calc(50% - 10px); /* Simplified calculation */
+    padding: 1rem;
+    min-width: 45%;
+  }
+
+  .list__item > span {
+    font-size: 2rem;
+  }
   .hero {
     margin: 0 auto;
     display: block;

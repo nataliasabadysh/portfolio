@@ -13,7 +13,7 @@ import "./markdown.css";
 overnight.colors["editor.background"] = "var(--code-bg)";
 
 export async function generateStaticParams() {
-  const entries = await readdir("./public", { withFileTypes: true });
+  const entries = await readdir("./public/blog", { withFileTypes: true });
 
   const dirs = entries
     .filter((entry) => entry.isDirectory())

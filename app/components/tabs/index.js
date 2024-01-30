@@ -66,7 +66,10 @@ const list = [
   },
   {
     category: "python",
-    resources: [],
+    resources: [{
+      url: 'https://github.com/donnemartin/system-design-primer',
+      name: 'The System Design Primer'
+    }],
   },
   {
     category: "sql",

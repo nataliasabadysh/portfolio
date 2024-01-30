@@ -2,19 +2,13 @@
 import { readdir, readFile } from "fs/promises";
 import matter from "gray-matter";
 
-import { MDXRemote } from "next-mdx-remote/rsc";
-import Link from "next/link";
-import { useRouter } from "next/navigation";
 import { BlogList } from "../components/blog";
 import styles from "./styles.module.css";
 
-// import remarkSmartpants from "remark-smartypants";
-// import rehypePrettyCode from "rehype-pretty-code";
-
-// export const metadata = {
-//   title: "A blog by Natalia Sabadysh",
-//   description: "",
-// };
+export const metadata = {
+  title: "Blog posts by Natalia Sabadysh",
+  description: "",
+};
 
 export async function getPosts() {
   const entries = await readdir("./public/blog/", { withFileTypes: true });
@@ -43,7 +37,7 @@ export default async function Blog() {
   return (
     <section className={styles.container}>
       <div className={styles.header}>
-        <h1 className={styles.title}> Blog </h1>
+        <h1 className={styles.title}> Blog posts </h1>
         <span className={styles.label}>{posts.length || 0}</span>
       </div>
       <p>

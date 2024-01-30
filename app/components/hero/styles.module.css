@@ -59,12 +59,12 @@
 
 .list__item > span {
   font-size: 3.5rem;
-  font-weight: 700; /* Corrected from 'font-family' to 'font-weight' */
+  font-weight: 700;
 }
 
 @media (max-width: 768px) {
   .list__item {
-    flex-basis: calc(50% - 10px); /* Simplified calculation */
+    flex-basis: calc(50% - 10px); 
     padding: 1rem;
     min-width: 45%;
   }

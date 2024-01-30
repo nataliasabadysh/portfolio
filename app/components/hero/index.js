@@ -3,8 +3,8 @@ import { SocialMedia } from "../socialmedia";
 import Image from "next/image";
 
 const experience = [
-  { value: "7+", title: "years in web development" },
-  { value: "16", title: "web projects completed" },
+  { value: "7+ ", title: "years in web development" },
+  //{ value: "16", title: "web projects completed" },
   { value: "400+", title: "hours mentoring at IT school" },
   // { value: "1 🎉", title: "personal SaaS project" },
 ];

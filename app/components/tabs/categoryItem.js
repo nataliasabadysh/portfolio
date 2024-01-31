@@ -21,7 +21,7 @@ export const ResourceList = ({ resources }) => {
             </a>
           </li>
         ))}
-      </ul>{" "}
+      </ul>
     </div>
   );
 };

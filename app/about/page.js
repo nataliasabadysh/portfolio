@@ -119,9 +119,10 @@ export default function Blog() {
           and I have contrebuted with outsourcing, where I build SaaS,
           government internal products, and banking industries.
         </p>
-        <p className={styles.paragraph}>I'm an optimistic, enthusiastic, 
-          and hard-working person waiting to see what 
-          the future holds for my career.</p>
+        <p className={styles.paragraph}>
+          I'm an optimistic, enthusiastic, and hard-working person waiting to
+          see what the future holds for my career.
+        </p>
       </Section>
 
       <Section title="What I Do After Work">
@@ -132,7 +133,6 @@ export default function Blog() {
         </b>
         I am proactive both at home and at work. I am a lifelong learner.
         exploring the world and curious about life.
-        
         <Image src={"/images/about.png"} alt="about" width={1200} height={32} />
       </Section>
       <Section title="Lifelong learning ">
@@ -145,7 +145,6 @@ export default function Blog() {
           Python.
         </p>
         <p> I want to develop my skills as a Data Engineer.</p>
-
       </Section>
 
       <Section title="">

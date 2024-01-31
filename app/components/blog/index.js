@@ -10,15 +10,13 @@ export function BlogList({ content }) {
           <li key={index} className={styles.container}>
             {console.log(item.title)}
             <Link href={"/blog/" + item.slug}>
-
               <div className={styles.blog_item}>
                 <h2> {item.title}</h2>
                 <p>{item.spoiler}</p>
               </div>
               <div className={styles.icon}>
-              <MdArrowOutward />
+                <MdArrowOutward />
               </div>
-
             </Link>
           </li>
         ))}

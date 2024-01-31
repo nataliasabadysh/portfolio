@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "./styles.module.css";
+import { EmojisplosionHeart } from "../emoji";
 
 const cvURL = "https://nataliadeveloper.vercel.app/";
 
@@ -27,14 +28,15 @@ export const Header = () => {
 
         <ul className={styles.navList}>
           <li className={styles.navItem}>
-            <a
+            {/* <a
               href={cvURL}
               className={styles.cvButton}
               target="_blank"
               rel="noopener noreferrer"
             >
               cv
-            </a>
+            </a> */}
+            <EmojisplosionHeart />
           </li>
         </ul>
       </nav>

@@ -29,21 +29,13 @@ export const Hero = () => {
         <section>
           <h1 className={styles.hero_title}> Hi! I&apos;m Natalia. </h1>
           <p className={styles.hero_subtitle}>
-            I&apos;m a software developer based in Vancouver.{" "}
+            I&apos;m a Software Developer based in Vancouver.{" "}
           </p>
           <div>
             <SocialMedia />
           </div>
         </section>
       </div>
-      <ul className={styles.list}>
-        {experience.map(({ value, title }) => (
-          <li key={value} className={styles.list__item}>
-            <span>{value}</span>
-            <p>{title}</p>
-          </li>
-        ))}
-      </ul>
     </section>
   );
 };

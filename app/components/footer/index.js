@@ -41,7 +41,9 @@ export function Footer() {
             </li>
           ))}
         </ul>
-        <p>Say Hi! Want to have a chat about anything, feel free to contact me</p>
+        <p>
+          Say Hi! Want to have a chat about anything, feel free to contact me
+        </p>
         <SocialMedia />
       </section>
 

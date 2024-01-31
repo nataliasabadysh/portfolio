@@ -66,10 +66,12 @@ const list = [
   },
   {
     category: "python",
-    resources: [{
-      url: 'https://github.com/donnemartin/system-design-primer',
-      name: 'The System Design Primer'
-    }],
+    resources: [
+      {
+        url: "https://github.com/donnemartin/system-design-primer",
+        name: "The System Design Primer",
+      },
+    ],
   },
   {
     category: "sql",
@@ -154,6 +156,7 @@ const list = [
       },
     ],
   },
+
   {
     category: "community",
     resources: [
@@ -165,11 +168,40 @@ const list = [
         url: "https://codingchallenges.substack.com/",
         name: "Coding Challenges",
       },
+      {
+        url: "https://www.wearedevelopers.com/",
+        name: "Europes #1Developer Community",
+      },
+      {
+        url: "https://futuretech.nl/",
+        name: "FUTURE TECH 2024",
+      },
+      {
+        url: "https://cascadiajs.com/",
+        name: "We arere a community for JavaScript developers in the Pacific Northwest.",
+      },
+      {
+        name: "The contemporary software engineering and design festival",
+        url: "https://c3fest.com/",
+      },
+      {
+        name: "Empowering front end developers to shape the web of tomorrow.",
+        url: "https://www.middlesbroughfe.co.uk/speakers",
+      },
     ],
   },
   {
     category: "youtube",
-    resources: [],
+    resources: [
+      {
+        url: "https://www.youtube.com/@FacebookOpenSource",
+        name: "Meta Open Source",
+      },
+      {
+        url: "https://www.youtube.com/@FacebookOpenSource",
+        name: "Meta Open Source",
+      },
+    ],
   },
 ];
 

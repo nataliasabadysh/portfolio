@@ -40,6 +40,7 @@ export default async function Blog() {
         <h1 className={styles.title}> Blog posts </h1>
         <span className={styles.label}>{posts.length || 0}</span>
       </div>
+      <p>What's Trending in the Web World?</p>
       <p>
         On my blog, I'll be sharing my experiences, learnings, and thoughts on
         web development.

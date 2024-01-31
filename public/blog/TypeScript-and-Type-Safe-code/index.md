@@ -324,3 +324,5 @@ const anotherFunction: <T, U>(number1: T, number2: T, text: U) => void = mix;
 
 anotherFunction<number, string>(1, 2, "List");
 ```
+
+[link - Google TypeScript Style Guide](https://google.github.io/styleguide/tsguide.html)

@@ -3,9 +3,9 @@ export const list = [
     title: "React Library, and Next.js Framework",
     desc: [
       {
-        title: "Cleint Site",
+        title: "React",
         message:
-          "Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the icons that your project is using.",
+          "I am a big fan of React and its rendering, modularity, and ease of implementation with any tool. It's smart in the techniques it has under the hood, easy to use in development tools and extensions, and has a big community that is growing and getting better. Today, React is turning to React Server Component, which I find more exciting. It allows us to split the logic and have calculations, storage, and security stored on the server, and receive ready HTML with SEO-optimized components. There are many tools that integrate with React today, like Figma and many more.",
         link: "/blog",
       },
     ],
@@ -14,111 +14,24 @@ export const list = [
     title: "GraphQL and REST API",
     desc: [
       {
-        title: "Cleint Site",
-        message: "iwhich utour project is using.is fast, ",
-        link: "/blog",
+        title: "GraphQL",
+        message:
+          "GraphQL allows to make a single request to fetch multiple pieces of data is one of its most significant advantages, especially when compared to traditional REST APIs.",
+        link: "/blog/graphql/",
       },
     ],
   },
-  {
-    title: "Design System, Storybook",
-    desc: [
-      {
-        title: "Cleint Site",
-        message: "iwhich utour project is using.is fast, ",
-        link: "/work",
-      },
-    ],
-  },
-  // {
-  //   title: "React",
-  //   desc: [
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "GraphQL",
-  //   desc: [
-  //     {
-  //       title: "Data Flat",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
   {
     title: "TypeScript",
     desc: [
       {
         title: "Why Should We Use TypeScript for Type-Safe Code in JavaScript?",
         message:
-          "TypeScript enables the creation of self-documenting, better-organized code with high readability and maintainability.",
+          "Why Should We Use TypeScript for Type-Safe Code in JavaScript?. TypeScript enables the creation of self-documenting, better-organized code with high readability and maintainability.",
         link: "/blog/TypeScript-and-Type-Safe-code/",
       },
     ],
   },
-  // {
-  //   title: "Next.js",
-  //   desc: [
-  //     {
-  //       title: "Data Flat",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Design System",
-  //   desc: [
-  //     {
-  //       title: "Storybook",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Design System",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Design patterns: OOP, SOLID, KISS",
-  //   desc: [
-  //     {
-  //       title: "Data Flat",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: "Algorythnms",
-  //   desc: [
-  //     {
-  //       title: "Data Flat",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
 ];
 
 export const tags = [

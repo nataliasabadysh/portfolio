@@ -8,6 +8,10 @@ const list = [
   {
     category: "web development",
     resources: [
+      {
+        url: "https://google.github.io/styleguide/",
+        name: "Google Style Guide",
+      },
       { url: "https://codeguide.co/", name: "Code Guide" },
       {
         url: "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
@@ -144,6 +148,14 @@ const list = [
       {
         url: "https://www.amazon.ca/Culture-Map-Breaking-Invisible-Boundaries/dp/1610392507",
         name: "The Culture Map",
+      },
+      {
+        url: "https://research.google/pubs/destructive-criticism-in-software-code-review-impacts-inclusion/",
+        name: "Google doc: Software Code Review ",
+      },
+      {
+        url: "https://www.amazon.com/Ikigai-Japanese-Secret-Long-Happy/dp/0143130722?&linkCode=sl1&tag=milanmilanovi-20&linkId=deb93bef532a1b8cc8b8b8fa8846e23a&language=en_US&ref_=as_li_ss_tl",
+        name: "Ikigai",
       },
     ],
   },

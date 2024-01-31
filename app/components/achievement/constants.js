@@ -6,7 +6,7 @@ export const list = [
         title: "Cleint Site",
         message:
           "Include popular icons in your React projects easily with react-icons, which utilizes ES6 imports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the mports that allows you to include only the icons that your project is using.",
-        link: "/work",
+        link: "/blog",
       },
     ],
   },
@@ -16,7 +16,7 @@ export const list = [
       {
         title: "Cleint Site",
         message: "iwhich utour project is using.is fast, ",
-        link: "/work",
+        link: "/blog",
       },
     ],
   },
@@ -56,19 +56,17 @@ export const list = [
   //     },
   //   ],
   // },
-  // {
-  //   title: "TS",
-  //   desc: [
-  //     {
-  //       title: "Data Flat",
-  //       message: "it is fast, ",
-  //     },
-  //     {
-  //       title: "Cleint Site",
-  //       message: "it is fast, ",
-  //     },
-  //   ],
-  // },
+  {
+    title: "TypeScript",
+    desc: [
+      {
+        title: "Why Should We Use TypeScript for Type-Safe Code in JavaScript?",
+        message:
+          "TypeScript enables the creation of self-documenting, better-organized code with high readability and maintainability.",
+        link: "/blog/TypeScript-and-Type-Safe-code/",
+      },
+    ],
+  },
   // {
   //   title: "Next.js",
   //   desc: [

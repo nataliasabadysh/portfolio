@@ -135,6 +135,12 @@ function f([first, second]: [number, number]) {
   console.log(second);
 }
 f([1, 2]);
+
+/* Case : Typed result of function */
+function add(x: number, y: number): number {
+  return x + y;
+}
+const sum: number = add(1, 2);
 ```
 
 # undefined, null
@@ -185,4 +191,136 @@ let someString: any = "Some string";
 let size: number = (<string>someString).length; // I want to treat it as a "string"
 // or
 let size: number = (someString as string).length;
+```
+
+```ts
+/* name?: string indicates that the name property is optional. */
+type Schema = {
+  name?: string;
+};
+```
+
+```ts
+type Schema = { a: string; b?: number };
+
+function init({ a, b = 0 }: Schema = { a: "" }): void {
+  console.log(a);
+  console.log(b);
+}
+
+init({ a: "str" });
+```
+
+## <mark> Best Practice: Type signature </mark>
+
+- Clarity and Documentation:
+- Compile-Time Type Checking
+- Maintainability
+- Refactoring Safety:
+- Generics and Advanced Typing
+
+```ts
+type FType = (baseValue: number, increment: number) => number;
+
+const increase: FType = function (x: number, y: number): number {
+  return x + y;
+};
+
+const updatedValue: number = increase(3, 1);
+```
+
+## Rest JS + Tuple
+
+```ts
+function buildLetters(
+  firstLetter: string,
+  ...restOfLetters: [string, string, string]
+) {
+  return firstLetter + " " + restOfLetters.join(" ");
+}
+
+// or
+type customType = string | number;
+
+function buildLetters(firstLetter: string, ...restOfLetters: customType[]) {
+  return firstLetter + " " + restOfLetters.join(" ");
+}
+
+let letters = buildLetters("a", "b", "c", "d");
+```
+
+## Good prictice to set up the Limit
+
+when you want to ensure that the function is not called with a meaningful "this" context.
+
+```ts
+const run: (this: void, n: number) => void = function (n) {
+  // this.n = n; // Property 'n' does not exist on type 'void'.
+  console.log(n);
+};
+
+run(1);
+```
+
+## <mark> Best Practice: Generics in TypeScript </mark>
+
+- provide flexibility with multiple types.
+
+```ts
+/* Case: fun takes any type paramenter */
+
+const returnValueByGeneric = function <T>(arg: T): T {
+  return arg;
+};
+// - <T> as alias
+// it is type variable that captures the type passed to the function
+
+const text: string = returnValueByGeneric<string>("str"); // <string> - argument
+
+const n: number = returnValueByGeneric<number>(1);
+```
+
+## User-Defined Type Guards "instanceof"
+
+```ts
+const idEntityNumber = (val) => val instanceof Number;
+
+const readLength = function <T>(arg: T[]): T[] {
+  const n = arg[1];
+
+  if (idEntityNumber(n)) {
+    // Guards
+    // or in JS typeof n === "number"
+
+    console.log(n.toFixed());
+  }
+  return arg;
+};
+
+readLength<number>([1, 2, 3]);
+```
+
+```ts
+const getArgument = function <T>(arg: T): T {
+  return arg;
+};
+
+const anotherFunction: <T>(arg: T) => T = getArgument;
+// number as T
+const n: number = <number>anotherFunction(1);
+
+// string as T
+const text: string = <string>anotherFunction("str");
+```
+
+## Generics with two different type variables, T and U.
+
+```ts
+const mix = function <T, U>(number1: T, number2: T, text: U): void {
+  return `${text}: ${number1}, ${number2}`;
+};
+
+const anotherFunction: <T, U>(number1: T, number2: T, text: U) => void = mix;
+
+anotherFunction<number, string>(1, 2, "List");
 ```

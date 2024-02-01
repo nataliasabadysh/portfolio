@@ -230,31 +230,33 @@ export const HighlightTabsNav = () => {
 
   return (
     <section className={styles.wrapper}>
-      <h2>My Top Resources for Web Dev: </h2>
-      <p>
-        Where I learn and gettting inspiration. and where I would recommended
-        for every developer.
-      </p>
-      <ul className={styles.highlight_tabs__container}>
-        {list.map((categoryItem, index) => {
-          const activeTab = expandedCategory === index;
+      <div className="block">
+        <h2>My Top Resources for Web Dev: </h2>
+        <p>
+          Where I learn and gettting inspiration. and where I would recommended
+          for every developer.
+        </p>
+        <ul className={styles.highlight_tabs__container}>
+          {list.map((categoryItem, index) => {
+            const activeTab = expandedCategory === index;
 
-          const stylingActiveTabe = activeTab
-            ? styles.highlight_tabs__tab + " " + styles.highlight_tab_active
-            : styles.highlight_tabs__tab;
-          return (
-            <li key={index}>
-              <button
-                className={stylingActiveTabe}
-                onClick={() => toggleCategory(index)}
-              >
-                {categoryItem.category}
-              </button>
-              {activeTab && <ResourceList resources={categoryItem} />}
-            </li>
-          );
-        })}
-      </ul>
+            const stylingActiveTabe = activeTab
+              ? styles.highlight_tabs__tab + " " + styles.highlight_tab_active
+              : styles.highlight_tabs__tab;
+            return (
+              <li key={index}>
+                <button
+                  className={stylingActiveTabe}
+                  onClick={() => toggleCategory(index)}
+                >
+                  {categoryItem.category}
+                </button>
+                {activeTab && <ResourceList resources={categoryItem} />}
+              </li>
+            );
+          })}
+        </ul>
+      </div>
     </section>
   );
 };

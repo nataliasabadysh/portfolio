@@ -13,28 +13,31 @@ export const Hero = () => {
   return (
     <section className={styles.hero}>
       <div className={styles.hero_container + " " + styles.left}>
-        <div className={styles.image}>
-          <Image
-            src={"/photo.webp"}
-            alt="Natalia Sabadysh personal photo"
-            height={250}
-            width={250}
-            sizes="33vw"
-            priority
-          />
-        </div>
-      </div>
-
-      <div className={styles.hero_container + " " + styles.right}>
         <section>
-          <h1 className={styles.hero_title}> Hi! I&apos;m Natalia. </h1>
+          <h1 className={styles.hero_title}>
+            Driven by a passion for <mark> Software Developer</mark>
+          </h1>
           <p className={styles.hero_subtitle}>
-            I&apos;m a Software Developer based in Vancouver.{" "}
+            Hi! I&apos;m Natalia. Welcome to my portfolio, where I share my
+            experience and help you build modern web applications.
           </p>
-          <div>
-            <SocialMedia />
-          </div>
         </section>
+
+        <div className={styles.hero_container + " " + styles.right}>
+          <div className={styles.image}>
+            <Image
+              src={"/nata.png"}
+              alt="Natalia Sabadysh personal photo"
+              height={350}
+              width={350}
+              sizes="33vw"
+              priority
+            />
+          </div>
+        </div>
+        <div className={styles.media}>
+          <SocialMedia />
+        </div>
       </div>
     </section>
   );

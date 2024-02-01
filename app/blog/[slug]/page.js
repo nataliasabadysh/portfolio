@@ -42,7 +42,7 @@ export default async function Page({ params }) {
   console.log(data);
 
   return (
-    <div>
+    <div className="markdown">
       {new Date(data.date).toLocaleDateString("en", {
         day: "numeric",
         month: "long",
@@ -51,25 +51,23 @@ export default async function Page({ params }) {
 
       <h1>{data.title}</h1>
 
-      <div className="markdown">
-        <MDXRemote
-          source={content}
-          options={{
-            mdxOptions: {
-              useDynamicImport: true,
-              remarkPlugins: [remarkSmartpants],
-              rehypePlugins: [
-                [
-                  rehypePrettyCode,
-                  {
-                    theme: overnight,
-                  },
-                ],
+      <MDXRemote
+        source={content}
+        options={{
+          mdxOptions: {
+            useDynamicImport: true,
+            remarkPlugins: [remarkSmartpants],
+            rehypePlugins: [
+              [
+                rehypePrettyCode,
+                {
+                  theme: overnight,
+                },
               ],
-            },
-          }}
-        />
-      </div>
+            ],
+          },
+        }}
+      />
     </div>
   );
 }

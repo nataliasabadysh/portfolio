@@ -56,12 +56,14 @@ export const Achievement = () => {
 
   return (
     <section className={style.achievement}>
-      <div className={style.achievement__header}>
-        <h2>Where I&apos;m good at</h2>
-        <ul>{tagsJsx}</ul>
-      </div>
+      <div className="block">
+        <div className={style.achievement__header}>
+          <h2>I talk about modern technology</h2>
+          <ul>{tagsJsx}</ul>
+        </div>
 
-      <ul className={style.achievement__list}>{list.map(renderlistJSX)}</ul>
+        <ul className={style.achievement__list}>{list.map(renderlistJSX)}</ul>
+      </div>
     </section>
   );
 };

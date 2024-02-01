@@ -68,4 +68,7 @@
   .achievement {
     margin: 3rem 0;
   }
+  .achievement__header {
+    padding: 0 10px;
+  }
 }

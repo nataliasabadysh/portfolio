@@ -24,7 +24,7 @@ const Section = ({ title, children, subtitle, component }) => {
 
 export default function Blog() {
   return (
-    <div>
+    <div className="block">
       <Section
         title=""
         component={

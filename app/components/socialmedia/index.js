@@ -8,7 +8,7 @@ export const SocialMedia = () => {
         <li key={name} className={styles.link}>
           <a href={href}>
             <Component />
-            <p>{name}</p>
+            <p className={styles.name}>{name}</p>
           </a>
         </li>
       ))}

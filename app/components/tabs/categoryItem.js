@@ -3,11 +3,10 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 import styles from "./styles.module.css";
 
 export const ResourceList = ({ resources }) => {
-  const title = <span className={styles.title}>{resources.category}</span>;
-
+  const titleJsx = <span className={styles.title}>{resources.category}</span>;
   return (
     <div className={styles.resourceList}>
-      {title}
+      {titleJsx}
       <ul>
         {resources.resources?.map((resource, resourceIndex) => (
           <li key={resourceIndex}>

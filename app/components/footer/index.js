@@ -31,7 +31,7 @@ export function Footer() {
                   href={contact.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label={contact.type}
+                  aria-label={contact.value}
                 >
                   {contact.value}
                 </a>

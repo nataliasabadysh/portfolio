@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { ResourceList } from "./categoryItem";
 import styles from "./styles.module.css";
 
@@ -219,8 +219,15 @@ const list = [
 
 export const HighlightTabsNav = () => {
   const [expandedCategory, setExpandedCategory] = useState(0);
+  const [activeTab, setActiveTab] = useState("");
 
-  const toggleCategory = (index) => {
+  useEffect(() => {
+    setActiveTab(list[0]);
+  }, []);
+
+  const toggleCategory = (index, categoryItem) => {
+    setActiveTab(categoryItem);
+
     if (expandedCategory === index) {
       setExpandedCategory(null);
     } else {
@@ -247,15 +254,15 @@ export const HighlightTabsNav = () => {
               <li key={index}>
                 <button
                   className={stylingActiveTabe}
-                  onClick={() => toggleCategory(index)}
+                  onClick={() => toggleCategory(index, categoryItem)}
                 >
                   {categoryItem.category}
                 </button>
-                {activeTab && <ResourceList resources={categoryItem} />}
               </li>
             );
           })}
         </ul>
+        <ResourceList resources={activeTab} />
       </div>
     </section>
   );

@@ -41,10 +41,12 @@ export function Footer() {
             </li>
           ))}
         </ul>
-        <p>
-          Say Hi! Want to have a chat about anything, feel free to contact me
-        </p>
-        <SocialMedia />
+        <div className={styles.container}>
+          <p>
+            Say Hi! Want to have a chat about anything, feel free to contact me
+          </p>
+          <SocialMedia />
+        </div>
       </section>
 
       <div className={styles.footer__bottomContainer}>

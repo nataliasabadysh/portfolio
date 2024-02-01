@@ -8,12 +8,12 @@
 
 .highlight_tabs__tab {
   cursor: pointer;
+  display: flex;
   background-color: white;
   border: var(--border-style);
   border-radius: var(--border-radius);
   color: var(--title-color);
   text-align: center;
-  display: inline-block;
   font-weight: 700;
   padding: 10px 20px;
   font-size: 12px;
@@ -43,16 +43,9 @@
   gap: 0.25rem;
 }
 .highlight_tabs__container {
-  position: relative;
   padding-top: 20px;
-}
-
-.resourceList {
-  position: absolute;
-  right: 40%;
-  top: 10%;
-  /* TODO refacrt */
-  /* height: 48px; */
+  margin-bottom: 30px;
+  display: flex;
 }
 .resourceList > li {
   border: 1px solid #333;

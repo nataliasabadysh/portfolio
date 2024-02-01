@@ -5,7 +5,10 @@
   border-top-left-radius: 32px;
   margin-top: 5px;
 }
-
+.container {
+  width: 50%;
+  font-size: 24px;
+}
 .footer__section {
   display: flex;
   justify-content: space-between;
@@ -38,5 +41,12 @@
 
   .footer__linkContainer {
     margin-bottom: 20px;
+  }
+  .container > p {
+    margin-bottom: 40px;
+  }
+  .container {
+    width: 100%;
+    font-size: 24px;
   }
 }

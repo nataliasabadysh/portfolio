@@ -4,6 +4,7 @@ import styles from "./styles.module.css";
 
 export const ResourceList = ({ resources }) => {
   const titleJsx = <span className={styles.title}>{resources.category}</span>;
+
   return (
     <div className={styles.resourceList}>
       {titleJsx}

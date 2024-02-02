@@ -42,7 +42,8 @@ export default function Blog() {
         <h1 className={styles.title}>Hi! I am Natalia.</h1>
         <h2> Software Engineer</h2>
         <p className={styles.paragraph}>
-          My tech stack: React, Next.js, TypeScript, GraphQL.
+          I am a big fan of
+          <mark>React, Next.js, TypeScript, GraphQL, SQL, FIGMA UI design</mark>
         </p>
         <p>
           I help solve business problems through modern custom web applications.

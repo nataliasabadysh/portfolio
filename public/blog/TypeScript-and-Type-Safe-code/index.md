@@ -1,5 +1,5 @@
 ---
-title: "Why we should use TypeScript Type-Safe code in JS ?"
+title: "TypeScript for JavaScript"
 date: "2024-01-30"
 spoiler: "Statically Typed vs Dynamically Typed Languages"
 ---

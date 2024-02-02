@@ -14,7 +14,7 @@ const contacts = [
   },
   {
     type: "Address",
-    value: "Vancouver, BC V6G 1W9",
+    value: "West End Vancouver",
     href: ``,
   },
 ];
@@ -22,7 +22,7 @@ const contacts = [
 export function Footer() {
   return (
     <footer className={styles.footer}>
-      <section className={styles.footer__section}>
+      <section className={`block ${styles.footer__section}`}>
         <ul className={styles.footer__linkContainer}>
           {contacts.map((contact) => (
             <li className={styles.footer__item} key={contact.type}>
@@ -49,7 +49,7 @@ export function Footer() {
         </div>
       </section>
 
-      <div className={styles.footer__bottomContainer}>
+      <div className={`block ${styles.footer__bottomContainer}`}>
         <span className={styles.footer__copyright}>
           designed & developed with ♥️ by Natalia Sabadysh
         </span>

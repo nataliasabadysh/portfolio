@@ -1,7 +1,7 @@
 ---
-title: "Let's dive into GraphQL"
+title: "The Power of GraphQL. Where Does It Lie?"
 date: "2024-01-31"
-spoiler: "which one to use ? "
+spoiler: "REST or GraphQL. Which One to Use?"
 ---
 
 ## <mark>Let's start with History before GraphQL</mark>

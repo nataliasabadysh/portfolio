@@ -14,6 +14,17 @@ const list = [
       },
       { url: "https://codeguide.co/", name: "Code Guide" },
       {
+        url: "https://yesviz.com/viewport/",
+        name: "Viewport Size for Devices",
+      },
+      { url: "https://www.mydevice.io/", name: "Screen metrics" },
+      { url: "https://caniuse.com/", name: "Can I Use ?" },
+    ],
+  },
+  {
+    category: "html css",
+    resources: [
+      {
         url: "https://html.spec.whatwg.org/multipage/grouping-content.html#the-main-element",
         name: "HTML spec Standard",
       },
@@ -28,11 +39,9 @@ const list = [
       { url: "https://htmlcheatsheet.com/css/", name: "CSS CheatSheet" },
       { url: "https://quickref.me/css3.html", name: "CSS 3 cheatsheet" },
       {
-        url: "https://yesviz.com/viewport/",
-        name: "Viewport Size for Devices",
+        url: "https://htmlcolorcodes.com/",
+        name: "HTML color codes, Hex color codes, RGB and HSL",
       },
-      { url: "https://www.mydevice.io/", name: "Screen metrics" },
-      { url: "https://caniuse.com/", name: "Can I Use ?" },
     ],
   },
   {

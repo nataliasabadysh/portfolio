@@ -35,7 +35,7 @@ export default async function Blog() {
   console.log(posts);
 
   return (
-    <section className={styles.container}>
+    <section className={`block ${styles.container} `}>
       <div className={styles.header}>
         <h1 className={styles.title}> Blog posts </h1>
         <span className={styles.label}>{posts.length || 0}</span>

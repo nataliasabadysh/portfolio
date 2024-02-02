@@ -8,7 +8,6 @@ export function BlogList({ content }) {
       <ul className={styles.blog_list}>
         {content.map((item, index) => (
           <li key={index} className={styles.container}>
-            {console.log(item.title)}
             <Link href={"/blog/" + item.slug}>
               <div className={styles.blog_item}>
                 <h2> {item.title}</h2>

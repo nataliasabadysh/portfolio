@@ -7,14 +7,23 @@ spoiler: "Statically Typed vs Dynamically Typed Languages"
 ## <mark> JavaScript in NOT Statically Typed, JS is Dynamically Typed Language </mark>
 
 ```
+TypeScript is a free and open-source high-level programming language developed by Microsoft
+that adds static typing with optional type annotations to JavaScript.
+
+It is designed for the development of
+large applications and transpiles to JavaScrip
+```
+
+<hr/>
 *** Statically Typed Languages
 In statically typed programming languages,
 type checking occurs at compile time.
 
-*** Dynamically Typed Languages
+\*\*\* Dynamically Typed Languages
 Conversely, in dynamically typed languages,
 type checking takes place at runtime or execution time.
-```
+
+<hr/>
 
 ## ✅ Advantages of Dynamic Typing in JavaScript
 

@@ -513,3 +513,48 @@ html {
   box-sizing: inherit;
 }
 ```
+
+## Example: <mark>CSS :last-child</mark>
+
+```css
+.site-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.site-nav__item {
+  margin-right: 60px;
+}
+
+.site-nav__item a:last-child {
+  margin-right: 0;
+}
+```
+
+## Example:<mark> :not()</mark>
+
+```css
+.site-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+// all without the last el
+.site-nav__item a:not(:last-child) {
+  margin-right: 60px;
+}
+```
+
+```css
+// every 3rd
+.feature-list-item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 60px;
+}
+
+// last row 
+.feature-list-item:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+```

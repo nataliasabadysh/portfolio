@@ -1,12 +1,12 @@
 .blog_list {
   display: flex;
   flex-wrap: wrap;
+  gap: 5px;
 }
 
 .blog_item {
-  padding: 2rem;
+  padding: 2rem 2rem 2rem 3rem;
   background-color: #fff;
-  margin: 2px;
   border-radius: 20px;
   font-size: 28px;
   font-weight: 700;

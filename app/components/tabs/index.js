@@ -22,6 +22,10 @@ const list = [
     ],
   },
   {
+    url: "https://www.dofactory.com/javascript/design-patterns/singleton",
+    name: "Design Patterns",
+  },
+  {
     category: "html css",
     resources: [
       {
@@ -92,6 +96,10 @@ const list = [
       {
         url: "https://www.c-sharpcorner.com/article/structured-query-language-sql/",
         name: "Structured Query Language",
+      },
+      {
+        url: "https://www.dofactory.com/sql",
+        name: "SQL Tutorial",
       },
     ],
   },

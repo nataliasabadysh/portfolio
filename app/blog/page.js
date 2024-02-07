@@ -5,11 +5,6 @@ import matter from "gray-matter";
 import { BlogList } from "../components/blog";
 import styles from "./styles.module.css";
 
-export const metadata = {
-  title: "Blog posts by Natalia Sabadysh",
-  description: "",
-};
-
 export async function getPosts() {
   const entries = await readdir("./public/blog/", { withFileTypes: true });
   const dirs = entries
@@ -31,8 +26,6 @@ export async function getPosts() {
 
 export default async function Blog() {
   const posts = await getPosts();
-
-  console.log(posts);
 
   return (
     <section className={`block ${styles.container} `}>

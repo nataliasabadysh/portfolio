@@ -2,8 +2,6 @@
   padding-top: 21px;
   padding-bottom: 21px;
   background-color: #ffffff;
-  border-bottom-left-radius: var(--border-radius);
-  border-bottom-right-radius: var(--border-radius);
   box-shadow: 0 5px 9px 0 rgba(24, 39, 75, 0.12);
 }
 

@@ -59,7 +59,7 @@ spoiler: "Complex layouts with CSS and Grid"
 
 ```
 
-###  Grid set up the columns: 
+### Grid set up the columns:
 
 ```css
 /* 1) */
@@ -88,6 +88,7 @@ grid-template: repeat(2, 1fr) / repeat(4, 1fr);
 ```
 
 ### Space:
+
 - Adapt the space specifications based on loyalty, ensuring flexibility in use
 
 ```css
@@ -99,7 +100,7 @@ grid-gap: 10px 20px;
 gap: 10px;
 ```
 
-### We can set up the Order of element 
+### We can set up the Order of element
 
 ```css
 div:nth-child(6) {
@@ -107,7 +108,8 @@ div:nth-child(6) {
 }
 ```
 
-## example: 
+## example:
+
 ```html
 <section class="boxes container">
   <nav class="box box1">Sidebar</nav>

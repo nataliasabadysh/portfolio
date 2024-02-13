@@ -5,7 +5,7 @@ import Image from "next/image";
 const experience = [
   { value: "7+ ", title: "years in web development" },
   //{ value: "16", title: "web projects completed" },
-  { value: "400+", title: "hours mentoring at IT school" },
+  { value: "400+", title: "hours mentoring at IT school" }
   // { value: "1 🎉", title: "personal SaaS project" },
 ];
 
@@ -14,11 +14,15 @@ export const Hero = () => {
     <section className={styles.hero}>
       <div className={styles.hero_container + " " + styles.left}>
         <section>
-          <h1 className={styles.hero_title}>
-            Driven by a passion for <mark> Software Developer</mark>
+          <h1 className={styles.hidden}>
+            Driven by a passion for Software Developer
           </h1>
+          <h2 className={styles.hero_title}>
+            Driven by a passion for{" "}
+            <span className="h_accent">Software Developer</span>
+          </h2>
           <p className={styles.hero_subtitle}>
-            Hi! I&apos;m Natalia. Welcome to my portfolio, where I share my
+            Hi! I&apos;m Natalia. Welcome to my web blog, where I share my
             experience and help you build modern web applications.
           </p>
         </section>

@@ -13,6 +13,7 @@
 
   --color-bg: #ececec;
   --color-accent: #ffda0b;
+  --color-accent_secondary: #3548fe;
   --code-bg: #232936;
 
   --border-radius: 25px;
@@ -77,8 +78,9 @@ button {
 h1 {
   font-size: 3.5rem;
   line-height: 1.5;
+  font-weight: 500;
   letter-spacing: -2px;
-  margin-bottom: 16px;
+  color: var(--color-accent_secondary);
 }
 
 mark {
@@ -88,6 +90,12 @@ mark {
 
 h1 > mark {
   text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: -1px;
+  line-height: 1.5;
 }
 
 .wrapper {
@@ -106,13 +114,12 @@ h1 > mark {
   margin: 0 auto;
 }
 
-h2 {
-  font-size: var(--fontsize_title);
-  letter-spacing: -3px;
-  line-height: 1.5;
-}
 .active {
   font-weight: 700;
+}
+
+.h_accent {
+  color: var(--color-accent_secondary);
 }
 
 @media screen and (max-width: 768px) {

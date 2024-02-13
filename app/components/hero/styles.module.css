@@ -52,6 +52,9 @@
   font-size: 3rem;
   font-weight: 700;
 }
+.hidden {
+  font-size: 0;
+}
 
 @media (max-width: 768px) {
   .list__item {

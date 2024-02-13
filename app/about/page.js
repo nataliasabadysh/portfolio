@@ -42,7 +42,7 @@ export default function Blog() {
         <h1 className={styles.title}>Hi! I am Natalia.</h1>
         <h2> Software Engineer</h2>
         <p className={styles.paragraph}>
-          I am a big fan of
+          I am a big fan of MERN tech stack :
           <mark>React, Next.js, TypeScript, GraphQL, SQL, FIGMA UI design</mark>
         </p>
         <p>

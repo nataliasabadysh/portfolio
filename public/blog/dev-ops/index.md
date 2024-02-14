@@ -89,6 +89,8 @@ lint:
 - Reduces integration problems
 - Allows developers to work faster
 
+![CI/CD workflow](img.jpg)
+
 ## Logger for error and performers CI:
 
 ### 1. Cache 

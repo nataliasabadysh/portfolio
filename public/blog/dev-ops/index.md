@@ -4,7 +4,9 @@ date: "2024-02.14"
 spoiler: "Why is CI/CD Like the Culture of Your Code?"
 ---
 
-## <mark>What is a good engineer? How good is your team this year? How does the environment affect the team?</mark>
+## <mark>What is a good engineer? How good is your team? How does the environment affect the team? </mark>
+
+## Collaborating and Teamwork:
 
 I believe the environment can affect the development and delivery process.
 And code env can effect on efficiency. 

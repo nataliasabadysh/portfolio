@@ -6,7 +6,7 @@ import { SocialMedia } from "../components/socialmedia";
 export const metadata = {
   title: "Natalia Sabadysh - Software Engineer",
   description:
-    "Natalia Sabadysh's personal blog about software engineering, UI/UX design, and life experiences."
+    "Natalia Sabadysh's personal blog about software engineering, UI/UX design, and life experiences.",
 };
 
 const softSkills = [
@@ -24,7 +24,7 @@ const softSkills = [
   "Decision Making",
   "Self-awareness",
   "Mentoring",
-  "Functions Well Under Pressure"
+  "Functions Well Under Pressure",
 ];
 
 const Section = ({ title, children, subtitle, component }) => {

@@ -9,7 +9,7 @@ spoiler: "Why is CI/CD Like the Culture of Your Code?"
 ## Collaborating and Teamwork:
 
 I believe the environment can affect the development and delivery process.
-And code env can effect on efficiency. 
+And code env can effect on efficiency.
 
 ## Why is CI/CD Like the Culture of Your Code?
 
@@ -18,30 +18,36 @@ CI/CD (Continuous Integration/Continuous Deployment) is often compared to the cu
 ![CI/CD workflow](img.jpg)
 
 ## The Journey of CI/CD:
-*From Development to User*
 
-1) **Write the Code:**
+_From Development to User_
+
+1. **Write the Code:**
+
    - Developers write new code or modify existing code to add features, fix bugs, or improve performance.
 
-2) **Test It:**
+2. **Test It:**
+
    - **Linting:** Automated tools check the code for syntax errors and adherence to coding standards.
    - **Unit Tests:** Automated tests verify the functionality of individual components or units of the code.
    - **Code Review:** Peers review the code for quality, readability, and adherence to best practices.
 
-3) **Build:**
+3. **Build:**
+
    - The code is compiled or packaged into a build that can be deployed to a testing or production environment.
 
-4) **Review:**
+4. **Review:**
+
    - **End-to-End (E2E) Tests:** Automated tests simulate user scenarios to ensure the application works as expected from start to finish.
 
-5) **Deploy:**
+5. **Deploy:**
+
    - The build is deployed to a production environment, making the new features or fixes available to users.
 
-6) **Manual Test:**
+6. **Manual Test:**
    - Manual testing may be performed as a final check to ensure that the application behaves as expected in the live environment.
 
+# CI Pipeline contains:
 
-# CI Pipeline contains: 
 ## <mark>1. Stages</mark>
 
 ```
@@ -57,9 +63,10 @@ Post-Deployment Stage
 Monitoring
 Feedback Loop
 ```
+
 example: stages
 
-```yml 
+```yml
 stages:
   - source
   - build
@@ -72,6 +79,7 @@ stages:
 ```
 
 ## <mark>2. Runner "lint"</mark>
+
 - Use Docker `image: node:latest`
 - Can be shared or specific to a project
 - Can be tagged with a specific tag
@@ -79,6 +87,7 @@ stages:
 - Runner types: Kubernetes (K8), Docker, Shell
 
 example: runners
+
 ```yml
 lint:
   stage: source
@@ -88,6 +97,7 @@ lint:
   script:
     - npm run lint
 ```
+
 ### Benefits:
 
 - Errors are detected early in the development process
@@ -96,17 +106,18 @@ lint:
 
 ## Logger for error and performers CI:
 
-### 1. Cache 
+### 1. Cache
+
 - Off by default and needs to be explicitly enabled.
 - Cache can be shared and accessed between different jobs in the same pipeline, allowing for faster execution times by reusing data from previous runs.
 - Cache configuration can be defined within the job definitions in the CI configuration file, and it’s typically used to store dependencies and intermediate build results to avoid re-downloading or rebuilding in each job.
 
-### 2. Artifactory 
+### 2. Artifactory
+
 - Off by default and must be set up separately as it's an external service.
 - Artifactory is generally used to store artifacts that are the outcomes of individual jobs, like binaries or libraries, and it can be used across different jobs and pipelines.
 - Artifactory has an expiration time (retention policy) that can be configured, which determines how long artifacts are kept before they are automatically deleted or archived.
 - Unlike cache, Artifactory is designed to act as a repository manager and can support various package formats and offer advanced artifact management features.
-
 
 ## CI/CD Components
 

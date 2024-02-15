@@ -4,7 +4,7 @@ date: "2024-02.14"
 spoiler: "Why is CI/CD Like the Culture of Your Code?"
 ---
 
-## <mark>What is a good engineer? How good is your team? How does the environment affect the team? </mark>
+## <mark>What is a good engineer? <br/>How good is your team? <br/>How does the environment affect the team? </mark>
 
 ## Collaborating and Teamwork:
 
@@ -15,8 +15,10 @@ And code env can effect on efficiency.
 
 CI/CD (Continuous Integration/Continuous Deployment) is often compared to the culture of your code because it represents a set of practices and values that shape how code is developed, tested, and deployed.<br/> Just as culture influences behavior and attitudes, CI/CD influences the workflow and quality of software development. It encourages frequent integration, automated testing, and consistent deployment, fostering a culture of collaboration, efficiency, and quality.
 
-# The Journey of CI/CD:
-## From Development to User
+![CI/CD workflow](img.jpg)
+
+## The Journey of CI/CD:
+*From Development to User*
 
 1) **Write the Code:**
    - Developers write new code or modify existing code to add features, fix bugs, or improve performance.
@@ -55,7 +57,8 @@ Post-Deployment Stage
 Monitoring
 Feedback Loop
 ```
-example: 
+example: stages
+
 ```yml 
 stages:
   - source
@@ -65,7 +68,7 @@ stages:
   - package
   - deploy
   - post-deploy
-# and so on ..
+# and runners
 ```
 
 ## <mark>2. Runner "lint"</mark>
@@ -75,7 +78,7 @@ stages:
 - Can be protected with a secret key
 - Runner types: Kubernetes (K8), Docker, Shell
 
-
+example: runners
 ```yml
 lint:
   stage: source
@@ -90,8 +93,6 @@ lint:
 - Errors are detected early in the development process
 - Reduces integration problems
 - Allows developers to work faster
-
-![CI/CD workflow](img.jpg)
 
 ## Logger for error and performers CI:
 

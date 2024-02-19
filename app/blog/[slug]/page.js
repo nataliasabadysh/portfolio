@@ -6,6 +6,8 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import remarkSmartpants from "remark-smartypants";
 import rehypePrettyCode from "rehype-pretty-code";
 
+import ProgressBar from "./progress";
+
 import overnight from "overnight/themes/Overnight-Slumber.json";
 
 import "./markdown.css";
@@ -39,10 +41,12 @@ export default async function Page({ params }) {
 
   const { content, data } = matter(file);
 
-  console.log(data);
-
   return (
     <div className="markdown">
+      <div className="stick">
+        <ProgressBar />
+      </div>
+
       {new Date(data.date).toLocaleDateString("en", {
         day: "numeric",
         month: "long",

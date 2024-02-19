@@ -2,6 +2,7 @@
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import styles from "./styles.module.css";
+import { EmojisplosionHeart } from "../emoji/index";
 
 export const Header = () => {
   const pathname = usePathname();
@@ -9,8 +10,9 @@ export const Header = () => {
     <header className={styles.header}>
       <div className="block">
         <nav className={styles.nav}>
-          <Link href="/">
+          <Link href="/" style={{ display: "flex" }}>
             <p className={styles.navLink}>natalia</p>
+            <EmojisplosionHeart />
           </Link>
 
           <ul className={styles.navList}>

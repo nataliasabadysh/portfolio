@@ -23,6 +23,10 @@ const list = [
         url: "https://www.dofactory.com/javascript/design-patterns/singleton",
         name: "Design Patterns",
       },
+      {
+        url: "https://www.opsmx.com/blog/",
+        name: "Everything about CI/CD",
+      },
     ],
   },
   {
@@ -177,7 +181,7 @@ const list = [
     ],
   },
   {
-    category: "news blog",
+    category: "tech blogs",
     resources: [
       {
         url: "https://www.lifewire.com/software-and-apps-4781541",
@@ -219,19 +223,19 @@ const list = [
       },
     ],
   },
-  {
-    category: "youtube",
-    resources: [
-      {
-        url: "https://www.youtube.com/@FacebookOpenSource",
-        name: "Meta Open Source",
-      },
-      {
-        url: "https://www.youtube.com/@FacebookOpenSource",
-        name: "Meta Open Source",
-      },
-    ],
-  },
+  // {
+  //   category: "youtube",
+  //   resources: [
+  //     {
+  //       url: "https://www.youtube.com/@FacebookOpenSource",
+  //       name: "Meta Open Source",
+  //     },
+  //     {
+  //       url: "https://www.youtube.com/@FacebookOpenSource",
+  //       name: "Meta Open Source",
+  //     },
+  //   ],
+  // },
 ];
 
 export const HighlightTabsNav = () => {

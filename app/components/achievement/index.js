@@ -5,6 +5,7 @@ import { list, tags } from "./constants";
 import style from "./styles.module.css";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import Link from "next/link";
+import AnimationLoyalty from "../animation";
 
 const Item = ({ item, isExpanded }) => {
   return isExpanded ? (
@@ -55,15 +56,17 @@ export const Achievement = () => {
   ));
 
   return (
-    <section className={style.achievement}>
-      <div className="block">
-        <div className={style.achievement__header}>
-          <h2>I talk about modern technology</h2>
-          <ul>{tagsJsx}</ul>
-        </div>
+    <AnimationLoyalty>
+      <section className={style.achievement}>
+        <div className="block">
+          <div className={style.achievement__header}>
+            <h2>I talk about modern technology</h2>
+            <ul>{tagsJsx}</ul>
+          </div>
 
-        <ul className={style.achievement__list}>{list.map(renderlistJSX)}</ul>
-      </div>
-    </section>
+          <ul className={style.achievement__list}>{list.map(renderlistJSX)}</ul>
+        </div>
+      </section>
+    </AnimationLoyalty>
   );
 };

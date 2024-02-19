@@ -3,7 +3,7 @@
   background-color: var(--color-bg_content);
   border-radius: var(--border-radius);
   gap: 2.5rem;
-  max-height: 1200px;  
+  max-height: 1200px;
   margin-top: 15px;
   display: flex;
   flex-direction: row;

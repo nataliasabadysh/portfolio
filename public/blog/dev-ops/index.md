@@ -46,23 +46,38 @@ _From Development to User_
 6. **Manual Test:**
    - Manual testing may be performed as a final check to ensure that the application behaves as expected in the live environment.
 
-# CI Pipeline contains:
+## CI/CD Pipeline in Detail by Features
+
+```
+1. Source Stage: Compilation, Dependency Management
+   - Code standards evolution
+   - Pipelines run on commit/PR
+   - Code version control
+
+2. Build Stage:
+   - Compiling source code
+   - Running unit tests
+
+3. Test Stage: Unit Testing, Integration Testing, Static Code Analysis
+   - Performance and security testing
+   - End-to-end (e2e) testing
+   - Integration testing
+
+4. Deploy Stage:
+   - Deployment to production server
+   - Fully automated
+   - Smoke testing
+
+and more as :
+   Staging Deployment
+   Production Deployment
+   Post-Deployment Stage
+
+   Monitoring
+   Feedback Loop
+```
 
 ## <mark>1. Stages</mark>
-
-```
-Source Stage: Compilation, Dependency Management
-Test Stage: Unit Testing, Integration Testing, Static Code Analysis
-Quality Assurance Stage: Code Review, Security Scanning
-Packaging Stage: Artifact Creation, Deployment Stage
-
-Staging Deployment
-Production Deployment
-Post-Deployment Stage
-
-Monitoring
-Feedback Loop
-```
 
 example: stages
 
@@ -126,9 +141,14 @@ lint:
 - Testing frameworks: Run automated tests to ensure code quality.
 - Deployment tools: Automate the deployment of code to various environments.
 
-## All Posable CI/CD Tools:
+## CI/CD Tools:
 
-- GitLab CI: Integrated with GitLab for continuous integration and deployment.
-- Jenkins: An open-source automation server for building, testing, and deploying.
-- Travis CI: A cloud-based service for continuous integration.
-- CircleCI: A cloud-based platform for continuous integration and continuous delivery.
+- GitLab CI
+- Jenkins
+- Travis CI
+- CircleCI
+- Azure Pipelines
+
+## Great articles and blogs about CI/CD
+
+[What is CI/CD and CI/CD Pipeline? – Processes, Stages, Benefits](https://www.opsmx.com/blog/what-is-a-ci-cd-pipeline/)

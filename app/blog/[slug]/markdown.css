@@ -4,6 +4,16 @@
   padding: 10px;
 }
 
+.markdown .progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: #557ee4;
+  transform-origin: 0%;
+}
+
 .markdown pre {
   margin-left: -1rem;
   margin-right: -1rem;
